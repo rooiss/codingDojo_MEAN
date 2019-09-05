@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Welcome to Quoting Dojo</h1>
+        <form action="/quotes">
+            <h3>Your Name: <input type="text" name="name"></h3>
+            <h3>Your Quote: <input type="text" name="name"></h3>
+            <input type="submit" value="Add My Quote!">
+        </form>
+        <a href="/quotes"><button>Skip To Quotes</button></a>
+        <% if(messages.quoteform) { %>
+            <% for (var x of messages.quoteform) {%>
+                <p id="error"><%= x %></p> 
+            <% } %>
+        <% } %>
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <% for (var x in cats) { %>
+        <h1>Welcome <%= cats[x].name %></h1>
+        <h2>All the irrelevant things you need to know about me as a cat</h2>
+        <p>Favorite food: <%= cats[x].food %></p>
+        <p>Age: <%= cats[x].age%></p>
+        <p>Sleeping spots:</p>
+        <p><%= cats[x].sleep1 %></p>
+        <p><%= cats[x].sleep2 %></p>
+        <% } %>
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+    </script>
+    <title>Document</title>
+</head>
+<body>
+        <div class="jumbotron card card-image" style="background-image: url(http://ffrescue.org/images/cat-care.jpg);">
+            <div class="text-white text-center py-5 px-4">
+              <div>
+                <h2 class="card-title h1-responsive pt-3 mb-5 font-bold"><strong>Welcome <%= cats.name %></strong></h2>
+                <p class="mx-5 mb-5">
+                    <%= cats.age %>
+                    <%= cats.food %>
+                    <%= cats.sleep1 %>
+                    <%= cats.sleep2 %>
+                </p>
+                <a class="btn btn-outline-white btn-md"><i class="fas fa-clone left"></i> View project</a>
+              </div>
+            </div>
+          </div>
+</body>
+</html>
